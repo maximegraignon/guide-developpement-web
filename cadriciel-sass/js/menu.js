@@ -31,6 +31,12 @@ let menu = {
     this.refButton.className = 'nav__control';
     this.refSpan.className = 'nav__span';
 
+    // On ajoute des attributs
+    this.refNav.setAttribute("aria-label", "Menu principal")
+    this.refButton.setAttribute("aria-expanded", "false");
+    this.refButton.setAttribute("aria-haspopup", "menu");
+    this.refButton.setAttribute("aria-controls", "navList");
+
     // On place le texte du Button dans son conteneur span
     this.refSpan.innerHTML = this.strNavClosed;
 
