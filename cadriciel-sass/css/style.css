@@ -551,10 +551,11 @@ h4,
 /****** Base commune *******/
 /* Bouton du menu */
 .nav__control {
-  background-color: rgba(145, 0, 145, 0.2);
+  background-color: rgba(155, 0, 145, 0.2);
   border: none;
   padding: 10px;
   min-width: 40px;
+  display: flex;
 }
 
 @media (min-width: 600px) {
@@ -664,6 +665,19 @@ h4,
     transition: max-height 0.5s;
   }
 }
+/*.nav--closed .nav__control:before{
+    background-image: url("../images/ico-menu.svg");
+}
+
+.nav__control:before{
+    display: inline-block;
+    content:"";
+    width: 1em;
+    height: 1em;
+    background-image: url("../images/ico-fermer.svg");
+    vertical-align: top;
+    margin-right: .25em;
+}*/
 /* Grille
    ========================================================================== */
 /*** Classe conteneur pour le centrage et l'affichage de la grille en arrière-plan ***/
@@ -768,6 +782,15 @@ header {
 }
 
 /*** Contenus principal et complémentaire ***/
+nav__control {
+  float: left;
+}
+
+img {
+  width: 1em;
+  margin-right: 5px;
+}
+
 aside {
   padding: 0 1rem 0;
 }
